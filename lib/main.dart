@@ -3,12 +3,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:personal_manga_reader/components/custom_elevated_button.dart';
-import 'package:personal_manga_reader/controller/controller_manga_list.dart';
 import 'package:personal_manga_reader/manga_item_view.dart';
 import 'package:personal_manga_reader/model/model_manga_item.dart';
 import 'package:personal_manga_reader/page_manga_chapters.dart';
 import 'package:personal_manga_reader/view_model/view_model_manga_list.dart';
-import 'package:provider/provider.dart';
 
 //============================  Variables  =============================
 bool _isLoading = false;
@@ -17,8 +15,6 @@ bool _rightButtonIsPressed = false;
 int _pageNumber = 1;
 String _searchedTitle = "";
 //bool _isGridView = false;
-late List<MangaItem> _mangaList;
-late MangaListController _mangaController;
 ViewModel_MangaList _viewModelMangaList = ViewModel_MangaList();
 double _screenWidth = 0;
 double _screenHeight = 0;

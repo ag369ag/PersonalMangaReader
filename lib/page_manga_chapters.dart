@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super, must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:personal_manga_reader/model/model_manga_item.dart';
 import 'package:personal_manga_reader/page_reader.dart';
